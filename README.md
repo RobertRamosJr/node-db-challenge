@@ -38,13 +38,22 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [x] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+  Relational Database: is a structure for data to be stored and retrieved. Structured Query Language (SQL): was designed as a means of accessing data stored inside a database. 
 
-- [ ] What is the name given to a table column that references the primary key on another table.
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+- [x] Why do tables need a `primary key`?
+
+  A primary key allows SQL a way of identifying unique elements in the same way that React requires individual elements to be identified by a key when mapping over them. This ensures that we avoid data anomalies by have a 1 to 1 relationship when requesting specific elements using an id.
+
+- [x] What is the name given to a table column that references the primary key on another table.
+
+  Foregin key
+
+- [x] What do we need in order to have a _many to many_ relationship between two tables.
+
+  We need to set up an intermediate table which demonstrates the relationship between tables. For this intermediate table, the primary key can't be just one number/string. Rather, it is comprised of a unique array of multiple keys. This allows us to refer to elements which may appear in multiple places in the database.
 
 ## Minimum Viable Product
 
